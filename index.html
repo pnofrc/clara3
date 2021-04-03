@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -10,139 +7,121 @@
         <title>Clara Gatti Comini</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
 
 
-<div class="row">
-    <div class="column1">
+    <div class="row">
 
-        <h2 id="home">Clara<br><span>Gatti Comini</span></h2>
+        <div class="column1">
+
+            <h2 id="home">Clara<br><span>Gatti Comini</span></h2>
 
 
+                <video id="vhome" src="home.mp4" type="video/mp4"></video>
 
-            <video id="vhome" src="home.mp4" type="video/mp4"></video>
+                <video id="vbio" src="bio.mp4" type="video/mp4"></video>
 
-            <video id="vbio" src="bio.mp4" type="video/mp4"></video>
+                <video id="vconcerts" src="concerts.mp4" type="video/mp4"></video>
 
-            <video id="vconcerts" src="concerts.mp4" type="video/mp4"></video>
+                <video id="vrepertoire" src="repertoire.mp4" type="video/mp4"></video>
 
-            <video id="vrepertoire" src="repertoire.mp4" type="video/mp4"></video>
+                <video id="vteaching" src="teaching.mp4" type="video/mp4"></video>
 
-            <video id="vteaching" src="teaching.mp4" type="video/mp4"></video>
+                <video id="vpress" src="press.mp4" type="video/mp4"></video>
 
-            <video id="vpress" src="press.mp4" type="video/mp4"></video>
+                <video  id="vcontacts"src="contacts.mp4" type="video/mp4"></video>
 
-            <video  id="vcontacts"src="contacts.mp4" type="video/mp4"></video>
-      
-
-        <div class="menu">
-            <!-- <button  id="bhome">Home</button> -->
-            <button  id="bbio">Bio</button>
-            <button  id="bconcerts">Concerts</button>
-            <button  id="brepertoire">Repertoire</button>
-            <button  id="bteaching">Teaching</button>
-            <button  id="bpress">Press</button>
-            <button  id="bcontacts">Contacts</button>
+            <div class="menu" >
+                <button  id="bbio">Bio</button>
+                <button  id="bconcerts">Concerts</button>
+                <button  id="brepertoire">Repertoire</button>
+                <button  id="bteaching">Teaching</button>
+                <button  id="bpress">Press</button>
+                <button  id="bcontacts">Contacts</button>
+            </div>
         </div>
-    </div>
-    <div class="column2">
-
-      
 
 
-            <p id="hometext">is an harpist based in London.</p>
+        <div class="column2">
+
+        <p id="hometext">is an harpist based in London.</p>
 
 
         <div id="bio">
             <h2>Bio</h2>
-            <div class = "mainT">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie condimentum massa, sit amet accumsan quam suscipit eu. Praesent eleifend ullamcorper felis, non feugiat leo luctus ut. Curabitur scelerisque sem molestie enim placerat, et tincidunt massa tristique. Nullam semper nulla pellentesque tortor suscipit, et dictum sem tempor. Sed viverra neque nisl, non consectetur turpis luctus eget. Cras semper vestibulum metus, eget tempor lorem mattis et. Suspendisse sed luctus leo. Donec scelerisque sit amet velit sit amet luctus. Praesent pharetra ante et metus ullamcorper, nec sodales enim lacinia.
-
-                Nullam euismod tellus ut dui ullamcorper faucibus. Cras nec mollis leo. Morbi vel ultrices sapien, a molestie velit. Nam vitae tortor finibus, semper tortor non, commodo libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum lacinia tincidunt metus, id efficitur quam lacinia et. Nullam vitae nibh rutrum nisl fringilla lobortis eu nec leo. Cras sodales faucibus erat eu porttitor. Mauris sit amet risus est. Duis imperdiet orci et consequat dignissim. Suspendisse lobortis est ut lacinia auctor.
-                
-                </p>
-            </div>
+            <zero-md src="./text/bio.md" class = "mainT">
+                <template data-merge="prepend">
+                    <link rel="stylesheet" href="style.css">
+                  </template>
+            </zero-md>
         </div>
 
         <div id="concerts">
             <h2>Concerts</h2>
-            <div class = "mainT">
-                <p>Concert #1</p>
-                <p>Concert #2</p>
-                <p>Concert #3</p>
-                <p>Concert #4</p>
-            </div>
+            <zero-md src="./text/concerts.md" class = "mainT">
+                <template data-merge="prepend">
+                    <link rel="stylesheet" href="style.css">
+                  </template>
+            </zero-md>
         </div>
 
         <div id="repertoire">
             <h2>Repertoire</h2>
-            <div class = "mainT">
-                <p>Sonata #1</p>
-                <p>Sonata #2</p>
-                <p>Sonata #3</p>
-                <p>Sonata #4</p>
-            </div>
+            <zero-md src="./text/repertoire.md" class = "mainT">
+                <template data-merge="prepend">
+                    <link rel="stylesheet" href="style.css">
+                  </template>
+            </zero-md>
         </div>
 
         <div id="teaching">
             <h2>Teaching</h2>
-            <div class = "mainT">
-                <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
-
-                <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
-            </div>
+            <zero-md src="./text/teaching.md" class = "mainT">
+                <template data-merge="prepend">
+                    <link rel="stylesheet" href="style.css">
+                  </template>
+            </zero-md>
         </div>
 
         <div id="press">
             <h2>Gallery</h2>
-            <div class = "mainT">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/P03i1wWlq3A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/P03i1wWlq3A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/P03i1wWlq3A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/P03i1wWlq3A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/P03i1wWlq3A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
-            </div>
+            <zero-md src="./text/gallery.md" class = "mainT">
+                <template data-merge="prepend">
+                    <link rel="stylesheet" href="style.css">
+                  </template>
+            </zero-md>
+        </div>
 
         <div id="contacts">
             <h2>Contacts</h2>
-            <div class = "mainT">
-                <p>blabla email</p>
-                <p>blabla whatever</p>
-            </div>
+            <zero-md src="./text/contacts.md" class = "mainT">
+                <template data-merge="prepend">
+                    <link rel="stylesheet" href="style.css">
+                  </template>
+            </zero-md>
+        </div>
+
         </div>
 
     </div>
-  </div>
-            <!-- <div class="row">
 
-                
-
-                <div class="sx">
-                    
-
-                    <button  id="btn-play" value="Play" disabled="disabled">
-                    <button  id="btn-pause" value="Pause" disabled="disabled">
-                    <button  id="btn-stop" value="Stop" disabled="disabled" /></div>
-                </div>
-
-                <div class="dx">
-                    <p>Clara<br><span>Gatti Comini</span></p>
-                    <p id="text">is an harpist based in London</p>
-                </div>
-                
-            </div>
--->
         <div class="footer">
             <a href="mailto:info@claragatticomini.com">info@claragatticomini.com</a>
         </div> 
 
 
         <script src="main.js"></script>
+        <script defer>
+
+        $('button').click(function(){
+            $('button.red').removeClass('red')
+                $(this).addClass('red');
+        });
+
+        </script>
     </body>
 </html>

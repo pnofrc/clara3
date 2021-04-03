@@ -40,6 +40,8 @@ function menuHome(){
     vpress.style.display="none";
     vcontacts.style.display="none";
 
+
+
     vhome.load();
 }
 
@@ -165,4 +167,9 @@ function menuContacts(){
     vpress.style.display="none";
     vcontacts.style.display="inline";
 
-    vcontacts.play();}
+
+
+    vcontacts.play();
+}
+
+

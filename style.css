@@ -31,9 +31,8 @@
     /* width: 100%; */
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
-        box-sizing: border-box;
-      }
+    box-sizing: border-box;
+    }
       
       body{
           height: 100%;
@@ -67,10 +66,12 @@
         color: var(--fir);
     }
 
+    *{
+        font-family: ortlight;
+    }
 
     h2{
         font-size: var(--tit);
-        font-family: ortlight;
         color: var(--sec);
         color: red;
         line-height: 3vw;
@@ -125,17 +126,7 @@ video{
     /* top: .3vw; */
 }
 
-#waveform{
-    /* position: fixed; */
-     /* margin-bottom: 0;  */
-     /* max-height: 88vw; */
-     width: 40%;
-     /* padding: 6vw; */
-     margin-bottom: 0;
-     margin: 0 auto;
 
-     /* border: solid blue 1vw; */
-}
 
 button{
     margin-top: 2vw;
@@ -146,6 +137,12 @@ button{
     color: var(--fir);
 }
 
+ .red {
+    color: var(--sec);
+    border: solid var(--sec) 2px;
+    box-shadow: var(--sec) 1px 1px 3px;
+  }
+
 
 .menu{
     display: flex;
@@ -154,9 +151,6 @@ button{
 
 }
 
-#hometext{
-
-}
 .footer{
     position: fixed;
     margin: 0;
